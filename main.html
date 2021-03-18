@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta charset="utf-8">
+        <title>login/sign up form</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="container">
+            <form action="#h" class="form " id="login">
+                <h1 class="form__title">Login</h1>
+                <div class="form__message form__message--error"></div>
+                <div class="form__input-group">
+                   <input type="text" id="username" class="form__input" autofocus placeholder="username or email" required> 
+                   <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="password" id="password" class="form__input form__input--error" autofocus placeholder="password" required> 
+                    <div class="form__input-error-message"></div>
+                 </div>
+                 <button class="form__button" type="Submit" onclick="getinfo()">Login</button>
+                 <p class="form__text">
+                   <a href="#" class="form__link">Forgot password? </a>
+                </p>
+                
+            </form>
+            
+        </div>
+        <script src="main.js"></script>
+        <script src="relogin.js"></script>
+    </body>
+</html>
