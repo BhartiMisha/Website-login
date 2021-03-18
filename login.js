@@ -1,4 +1,4 @@
-var num=[
+var xyz=[
     {
         username : "synans",
         password  : "company"
@@ -9,7 +9,7 @@ var num=[
     },
     {
         username : "harry",
-        Password  : "potter"
+        password  : "potter"
     }
     ]
     
@@ -18,13 +18,12 @@ var num=[
         
         var user=document.getElementById("username").value;
         var pass=document.getElementById("password").value;
-           for( i=0;i< num.length ;i++)
+        var num=xyz.length;
+           for( i=0; i < num;i++)
         {
-            if(user==num[i].username && pass==num[i].password)
+            if((user == xyz[i].username) && (pass == xyz[i].password))
             {
-                localStorage.setItem(user,pass);
                 window.open("home.html");
-                            
              }
         }
     }
